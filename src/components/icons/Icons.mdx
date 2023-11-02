@@ -1,0 +1,28 @@
+{/* Icons.mdx */}
+
+import { Meta, Title, IconGallery, IconItem } from "@storybook/blocks";
+
+import * as Icons from "../icons";
+
+<Meta title="System/Icons" />
+
+# Icons
+
+<IconGallery>
+  {Object.entries(Icons).map(([name, Icon]) => (
+    <IconItem name={name}>
+      <div
+        style={{
+          backgroundColor: "#c4c4c4",
+          height: 42,
+          width: 42,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Icon height={24} width={24} />
+      </div>
+    </IconItem>
+  ))}
+</IconGallery>
