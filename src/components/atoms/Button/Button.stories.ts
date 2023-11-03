@@ -16,6 +16,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+console.log("test");
 export const Default: Story = {
   args: {
     children: "Button",
